@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8 March Invitation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Уведомление -->
+<div id="notification" class="center">
+    <h2>🔔 Новое уведомление</h2>
+    <p>У вас 1 новое сообщение</p>
+    <button onclick="openInvite()">Открыть сообщение</button>
+</div>
+
+<!-- Выбор девушки -->
+<div id="girls" class="hidden">
+    <h2>Выберите себя</h2>
+
+    <div class="girls-container">
+
+        <div class="girl" onclick="selectGirl('Айзере','images/aizere.jpg')">
+          <img src="images/aizere.jpg">
+          <p>Айзере</p>
+        </div>
+
+        <div class="girl" onclick="selectGirl('Аружан','images/aruzhan.jpg')">
+          <img src="images/aruzhan.jpg">
+          <p>Аружан</p>
+        </div>
+
+        <div class="girl" onclick="selectGirl('Маржан','images/marzhan.jpg')">
+          <img src="images/marzhan.jpg">
+          <p>Маржан</p>
+        </div>
+
+        <div class="girl" onclick="selectGirl('Жанел','images/zhanel.jpg')">
+          <img src="images/zhanel.jpg">
+          <p>Жанел</p>
+        </div>
+
+    </div>
+</div>
+
+<!-- Поздравление -->
+<div id="invite" class="hidden center">
+
+    <img id="selectedPhoto" class="invite-photo">
+
+    <h2 id="greeting"></h2>
+
+    <p>Поздравляем тебя с 8 марта 🌷</p>
+    <p>Приглашаем тебя на праздничный вечер</p>
+    <p>📅 9 марта <br>🕒 17:30 <br>📍 Место: Сюрприз</p>
+
+    <h3>Придешь?</h3>
+
+    <div class="buttons">
+        <button id="yes">ДА ❤️</button>
+        <button id="no">НЕТ 😢</button>
+    </div>
+
+</div>
+
+<!-- Финал -->
+<div id="final" class="hidden center">
+    <h2>Спасибо! 🌷</h2>
+    <p>Ждём тебя 9 марта!</p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

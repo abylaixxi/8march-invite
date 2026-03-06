@@ -1,0 +1,99 @@
+body{
+    font-family: Arial;
+    text-align:center;
+    background:#ffe6f0;
+    margin:0;
+    padding:0;
+}
+
+.center{
+    margin-top:100px;
+}
+
+.hidden{
+    display:none;
+}
+
+button{
+    padding:12px 25px;
+    font-size:18px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    margin:10px;
+}
+
+#yes{
+    background:#ff4da6;
+    color:white;
+}
+
+#no{
+    background:gray;
+    color:white;
+    position:relative;
+}
+
+.girls-container{
+    display:flex;
+    flex-direction: column; /* вертикально */
+    align-items:center;
+    gap:20px;
+    margin-top:40px;
+}
+
+.girl{
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.girl img{
+    transition:0.3s;
+    width:150px;
+    height:150px;
+    object-fit:cover;
+    border-radius:50%;
+    border:3px solid white;
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
+
+.girl:hover img{
+    transform:scale(1.1);
+}
+
+.invite-photo{
+    width:180px;
+    height:180px;
+    object-fit:cover;
+    border-radius:50%;
+    margin-bottom:20px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Адаптив для телефонов */
+@media screen and (max-width: 600px) {
+
+  .girls-container{
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .girl img{
+    width: 120px;
+    height: 120px;
+  }
+
+  .invite-photo{
+    width: 150px;
+    height: 150px;
+  }
+
+  button{
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+
+  .center{
+    margin-top: 50px;
+  }
+}
