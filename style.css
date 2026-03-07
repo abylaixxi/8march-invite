@@ -96,4 +96,13 @@ button{
   .center{
     margin-top: 50px;
   }
+  a {
+  color: #ff2e8b;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
 }
